@@ -6,7 +6,7 @@
         <button class="prev" onclick="changeImage(-1)">&#10094;</button>
         
         <div class="image-frame">
-            <img id="carouselImage" src="img/5.jpg" alt="Image 1" class="image">
+            <img id="carouselImage" src="img/anhdau.png" alt="Image 1" class="image">
             <div id="caption" class="caption">Caption for Image 1</div>
         </div>
         
@@ -17,9 +17,9 @@
     <script>
         let currentImageIndex = 0;
 const images = [
-    { src: "img/HCM.png", alt: "Image 1", caption: "Caption for Image 1" },
-    { src: "img/lenin.png", alt: "Image 2", caption: "Caption for Image 2" },
-    { src: "img/TUtung.png", alt: "Image 3", caption: "Caption for Image 3" }
+    { src: "img/anh2.png", alt: "Image 1", caption: "Caption for Image 1" },
+    { src: "img/anh3.png", alt: "Image 2", caption: "Caption for Image 2" },
+    { src: "img/anh4.png", alt: "Image 3", caption: "Caption for Image 3" }
 ];
 function changeImage(direction) {
     currentImageIndex += direction;

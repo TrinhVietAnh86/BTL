@@ -8,12 +8,14 @@
                 <input type="text" placeholder="Tìm kiếm...">
                 <button>Tìm Kiếm</button>
             </div>
-            <div class="user-options">
-                <button>Đăng Nhập</button>
-                <span>hoặc</span>
-                <button>Đăng Ký</button>
-                <div class="cart">0 sản phẩm</div>
-            </div>
+            <<div class="user-options">
+    <button onclick="window.location.href='./page/dangnhap-dangki/dangnhap/dangnhap.html';">Đăng Nhập</button>
+    <span>hoặc</span>
+    <button onclick="window.location.href='./page/dangnhap-dangki/dang-ki/dangki.html';">Đăng Ký</button>
+    <div class="cart">0 sản phẩm</div>
+</div>
+
+
         </div>
         <nav>
             <ul>

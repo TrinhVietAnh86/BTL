@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<link rel="stylesheet" href="css/banner.css">
+<link rel="stylesheet" href="css/styles.css">
 <body>
     <?php include("page/menu/giaodien.php")?>
     <?php include("page/banner/banner.php")?>

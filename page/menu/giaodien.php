@@ -12,6 +12,7 @@
     <button onclick="window.location.href='./page/dangnhap-dangki/dangnhap/dangnhap.html';">Đăng Nhập</button>
     <span>hoặc</span>
     <button onclick="window.location.href='./page/dangnhap-dangki/dang-ki/dangki.html';">Đăng Ký</button>
+    <button onclick="window.location.href='./../../BTL_tuan/text/giohang.php';">Giỏ Hàng</button>
     <div class="cart">0 sản phẩm</div>
 </div>
 
@@ -33,5 +34,4 @@
             <span>Giảm Giá Theo Đơn Hàng</span>
         </div>
     </header>
-    
 </body>

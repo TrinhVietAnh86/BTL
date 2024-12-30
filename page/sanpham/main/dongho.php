@@ -1,23 +1,20 @@
-<h1>đồng hồ</h1>
 <div class="productssp">
-            <?php
-            $products = [
-                ["name" => "Sản phẩm 1", "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 1"],
-                ["name" => "Sản phẩm 2", "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 2"],
-                ["name" => "Sản phẩm 3", "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 3"],
-                ["name" => "Sản phẩm 4", "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 4"],
-                ["name" => "Sản phẩm 5", "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 5"],
-                ["name" => "Sản phẩm 6", "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 6"],
-                ["name" => "Sản phẩm 7", "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 7"],
-                ["name" => "Sản phẩm 8", "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 8"],
-            ];
+    <?php
+    $products = [
+        ["name" => "Sản phẩm 1", "price" => 100000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 1"],
+        ["name" => "Sản phẩm 2", "price" => 200000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 2"],
+        ["name" => "Sản phẩm 3", "price" => 150000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 3"],
+        ["name" => "Sản phẩm 4", "price" => 120000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 4"],
+    ];
 
-            foreach ($products as $product) {
-                echo "<div class='product'>
-                        <img src='{$product['image']}' alt='{$product['name']}'>
-                        <h3>{$product['name']}</h3>
-                        <p>{$product['description']}</p>
-                      </div>";
-            }
-            ?>
-        </div>
+    foreach ($products as $product) {
+        echo "<div class='product'>
+                <img src='{$product['image']}' alt='{$product['name']}' style='width: 150px; height: 150px;'>
+                <h3>{$product['name']}</h3>
+                <p>{$product['description']}</p>
+                <p>Giá: " . number_format($product['price'], 0, ',', '.') . " VNĐ</p>
+                <button onclick=\"addToCart('{$product['name']}', {$product['price']})\">Thêm vào giỏ</button>
+              </div>";
+    }
+    ?>
+</div>

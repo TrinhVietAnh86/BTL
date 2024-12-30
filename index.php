@@ -7,6 +7,9 @@
 </head>
 <link rel="stylesheet" href="css/banner.css">
 <body>
-    <?php include("page/banner.php")?>
+    <?php include("page/menu/giaodien.php")?>
+    <?php include("page/banner/banner.php")?>
+    <?php include("page/sanpham/giaodien.php")?>
+    <?php include("page/cuoi/cuoitrang.php")?>
 </body>
 </html>

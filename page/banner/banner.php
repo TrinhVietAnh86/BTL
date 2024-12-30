@@ -1,4 +1,4 @@
-<div id="baner">
+<div class="baner">
 
 <div class="khungbn">
     <div class="carousel">
@@ -14,12 +14,17 @@
     </div>
 </div>
 
+<div class="anhbanner">
+    <div class="anh1"><img src="img/anh2.png" alt="" srcset=""></div>
+    <div class="anh1"><img src="img/anh2.png" alt="" srcset=""></div>
+</div>
+
     <script>
         let currentImageIndex = 0;
 const images = [
-    { src: "img/anh2.png", alt: "Image 1", caption: "Caption for Image 1" },
-    { src: "img/anh3.png", alt: "Image 2", caption: "Caption for Image 2" },
-    { src: "img/anh4.png", alt: "Image 3", caption: "Caption for Image 3" }
+    { src: "img/anh2.png", alt: "Image 1", caption: "" },
+    { src: "img/anh3.png", alt: "Image 2", caption: "" },
+    { src: "img/anh4.png", alt: "Image 3", caption: "" }
 ];
 function changeImage(direction) {
     currentImageIndex += direction;
@@ -39,6 +44,4 @@ function changeImage(direction) {
 }
 
     </script>
-</div>
-
 </div>

@@ -10,22 +10,19 @@
     <section id="register">
         <div class="container">
             <h2>Đăng ký tài khoản</h2>
-            <form action="dangnhap.html" method="post" id="register-form">
+            <form action="register.php" method="post">
                 <label for="username">Tên đăng nhập:</label>
                 <input type="text" id="username" name="username" required>
 
                 <label for="password">Mật khẩu:</label>
                 <input type="password" id="password" name="password" required>
 
-                <label for="confirm-password">Xác nhận mật khẩu:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <button type=""><a href="dangnhap.html">Đăng ký</a></button>
+                <button type="submit">Đăng ký</button>
             </form>
-            <p>Đã có tài khoản? <a href="../dangnhap/dangnhap.html">Đăng nhập</a></p>
+            <p>Đã có tài khoản? <a href="../dangnhap/dangnhap.php">Đăng nhập</a></p>
         </div>
     </section>
 </body>

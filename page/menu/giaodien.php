@@ -13,7 +13,7 @@
     <span>hoặc</span>
     <button onclick="window.location.href='./page/dangnhap-dangki/dang-ki/dangki.php';">Đăng Ký</button>
     <button onclick="window.location.href='./../../BTL_tuan/text/giohang.php';">Giỏ Hàng</button>
-    <div class="cart">0 sản phẩm</div>
+    
 </div>
 
 

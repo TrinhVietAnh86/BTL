@@ -1,10 +1,10 @@
 <div class="productssp">
     <?php
     $products = [
-        ["name" => "Sản phẩm 1", "price" => 100000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 1"],
-        ["name" => "Sản phẩm 2", "price" => 200000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 2"],
-        ["name" => "Sản phẩm 3", "price" => 150000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 3"],
-        ["name" => "Sản phẩm 4", "price" => 120000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 4"],
+        ["name" => "Samsung Galaxy M55 (12GB 256GB)", "price" => 10190000, "image" => "page/sanpham/main/img/dien-thoai-samsung-galaxy-m55.png", "description" => "Mô tả sản phẩm "],
+        ["name" => "Samsung Galaxy S24 FE 5G 8GB 128GB", "price" => 13990000, "image" => "page/sanpham/main/img/dien-thoai-samsung-galaxy-s24-fe_3__4.png", "description" => "Mô tả sản phẩm "],
+        ["name" => "iPhone 16 Pro Max 256GB | Chính hãng VN/A", "price" => 33290000, "image" => "page/sanpham/main/img/iphone-16-pro-max.png", "description" => "Mô tả sản phẩm "],
+        ["name" => "Samsung Galaxy S24 Ultra 12GB 256GB", "price" => 25000000, "image" => "page/sanpham/main/img/ss-s24-ultra-xam-222.png", "description" => "Mô tả sản phẩm "],
     ];
 
     foreach ($products as $product) {

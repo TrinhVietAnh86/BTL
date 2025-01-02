@@ -1,10 +1,10 @@
 <div class="productssp">
     <?php
     $products = [
-        ["name" => "Sản phẩm 1", "price" => 100000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 1"],
-        ["name" => "Sản phẩm 2", "price" => 200000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 2"],
-        ["name" => "Sản phẩm 3", "price" => 150000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 3"],
-        ["name" => "Sản phẩm 4", "price" => 120000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 4"],
+        ["name" => "iPad Pro M4 11 inch Wifi 256GB | Chính hãng Apple Việt Nam", "price" => 27490000, "image" => "page/sanpham/main/img/Ipad Pro M4 .png", "description" => "Mô tả sản phẩm 1"],
+        ["name" => "Samsung Galaxy Tab S9 FE 5G 6GB 128GB", "price" => 9490000, "image" => "page/sanpham/main/img/samsungS9.png", "description" => "Mô tả sản phẩm 2"],
+        ["name" => "Samsung Galaxy Tab S9 FE Plus WIFI 12GB 256GB", "price" => 14990000, "image" => "page/sanpham/main/img/samsungS9FEPlus.png", "description" => "Mô tả sản phẩm 3"],
+        ["name" => "Xiaomi Redmi Pad SE Wifi (6GB 128GB)", "price" => 11450000, "image" => "page/sanpham/main/img/xiaomi-redmi-pad-se_1_3.png", "description" => "Mô tả sản phẩm 4"],
     ];
 
     foreach ($products as $product) {

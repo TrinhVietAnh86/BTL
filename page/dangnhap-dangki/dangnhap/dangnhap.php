@@ -23,7 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <label for="password">Mật khẩu:</label>
                 <input type="password" id="password" name="password" required>
-
                 <button type="submit">Đăng nhập</button>
             </form>
 

@@ -8,22 +8,18 @@
                 <input type="text" placeholder="Tìm kiếm...">
                 <button>Tìm Kiếm</button>
             </div>
-            <<div class="user-options">
-    <button onclick="window.location.href='./page/dangnhap-dangki/dangnhap/dangnhap.php';">Đăng Nhập</button>
-    <span>hoặc</span>
-    <button onclick="window.location.href='./page/dangnhap-dangki/dang-ki/dangki.php';">Đăng Ký</button>
-    <button onclick="window.location.href='./../../BTL_tuan/text/giohang.php';">Giỏ Hàng</button>
+            <div class="user-options">
+    <button onclick="window.location.href='./page/dangnhap-dangki/dangnhap/dangnhap.php';">Tài Khoản</button>
+    <button onclick="window.location.href='./../../BTL/text/giohang.php';">Giỏ Hàng</button>
     
 </div>
-
-
         </div>
         <nav>
             <ul>
                 <li><a href="#">Trang Chủ</a></li>
                 <li><a href="#">Giới Thiệu</a></li>
                 <li><a href="#">Sản Phẩm</a></li>
-                <li><a href="../../BTL_tuan/page/tintuc/index.php">Tin Tức</a></li>
+                <li><a href="../../BTL/page/tintuc/index.php">Tin Tức</a></li>
                 <li><a href="#">Liên Hệ</a></li>
             </ul>
         </nav>

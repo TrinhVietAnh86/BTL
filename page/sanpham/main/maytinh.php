@@ -1,10 +1,10 @@
 <div class="productssp">
     <?php
     $products = [
-        ["name" => "Sản phẩm 1", "price" => 100000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 1"],
-        ["name" => "Sản phẩm 2", "price" => 200000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 2"],
-        ["name" => "Sản phẩm 3", "price" => 150000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 3"],
-        ["name" => "Sản phẩm 4", "price" => 120000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 4"],
+        ["name" => "PC Mini Pc Asus NUC 14 Pro Revel Canyon U7", "price" => 19490000, "image" => "page/sanpham/main/img/pc mini ASUS.png", "description" => "Mô tả sản phẩm 1"],
+        ["name" => "PC CPS văn phòng S04 i5 12400 / 8GB - 256GB", "price" => 8990000, "image" => "page/sanpham/main/img/pc-cps-van-phong-s4.png", "description" => "Mô tả sản phẩm 2"],
+        ["name" => "PC CPS Gaming G01 i3 12100F / 16GB - 256GB / GTX 1650", "price" => 10590000, "image" => "page/sanpham/main/img/pc-cps-gaming-g1.png", "description" => "Mô tả sản phẩm 3"],
+        ["name" => "PC CPS Đồ Hoạ D07 i5 14600F / 16GB - 500GB / RTX 3060", "price" => 23290000, "image" => "page/sanpham/main/img/pcdohoa.png", "description" => "Mô tả sản phẩm 4"],
     ];
 
     foreach ($products as $product) {

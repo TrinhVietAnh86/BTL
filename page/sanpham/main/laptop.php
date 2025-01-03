@@ -1,10 +1,10 @@
 <div class="productssp">
     <?php
     $products = [
-        ["name" => "Sản phẩm 1", "price" => 100000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 1"],
-        ["name" => "Sản phẩm 2", "price" => 200000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 2"],
-        ["name" => "Sản phẩm 3", "price" => 150000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 3"],
-        ["name" => "Sản phẩm 4", "price" => 120000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 4"],
+        ["name" => "Laptop Acer Aspire 3 Spin A3SP14-31PT-387Z", "price" => 9490000, "image" => "page/sanpham/main/img/Acer.png", "description" => "Mô tả sản phẩm 1"],
+        ["name" => "Laptop ASUS Gaming VivoBook K3605ZC-RP564W", "price" => 18490000, "image" => "page/sanpham/main/img/ASUS.png", "description" => "Mô tả sản phẩm 2"],
+        ["name" => "page/sanpham/main/img/ASUS.png", "price" => 16999000, "image" => "page/sanpham/main/img/nitro5_.png", "description" => "Mô tả sản phẩm 3"],
+        ["name" => "Laptop MSI Modern 14 C12MO-660VN", "price" => 29450000, "image" => "page/sanpham/main/img/MSI.png", "description" => "Mô tả sản phẩm 4"],
     ];
 
     foreach ($products as $product) {

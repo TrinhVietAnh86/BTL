@@ -1,10 +1,10 @@
 <div class="productssp">
     <?php
     $products = [
-        ["name" => "Sản phẩm 1", "price" => 100000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 1"],
-        ["name" => "Sản phẩm 2", "price" => 200000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 2"],
-        ["name" => "Sản phẩm 3", "price" => 150000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 3"],
-        ["name" => "Sản phẩm 4", "price" => 120000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 4"],
+        ["name" => "DJI Osmo Pocket 3", "price" => 12990000, "image" => "page/sanpham/main/img/cmr DJI osmo Pocket3.png", "description" => "Mô tả sản phẩm 1"],
+        ["name" => "Camera GoPro Hero 12", "price" => 9490000, "image" => "page/sanpham/main/img/cmrGOPRO HERO12_2_.webp", "description" => "Mô tả sản phẩm 2"],
+        ["name" => "Camera DJI Osmo Action 4", "price" => 6990000, "image" => "page/sanpham/main/img/camera-hanh-dong-dji-action-4_12_.png", "description" => "Mô tả sản phẩm 3"],
+        ["name" => "Camera Insta360 One X3", "price" => 8490000, "image" => "page/sanpham/main/img/camera-hanh-trinh-insta360-one-x3.png", "description" => "Mô tả sản phẩm 4"],
     ];
 
     foreach ($products as $product) {

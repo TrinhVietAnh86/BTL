@@ -23,8 +23,13 @@
             <ul>
                 <li><a href="#">Trang Chủ</a></li>
                 <li><a href="#">Giới Thiệu</a></li>
+<<<<<<< HEAD
                 <li><a href="#">Danh mục sản Phẩm</a></li>
                 <li><a href="#">Tin Tức</a></li>
+=======
+                <li><a href="#">Sản Phẩm</a></li>
+                <li><a href="../../BTL_tuan/page/tintuc/index.php">Tin Tức</a></li>
+>>>>>>> c8e6b240008a099d65a0dd434071ae57dda965b4
                 <li><a href="#">Liên Hệ</a></li>
             </ul>
         </nav>

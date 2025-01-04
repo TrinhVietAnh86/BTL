@@ -8,13 +8,13 @@
                 <input type="text" placeholder="Tìm kiếm...">
                 <button>Tìm Kiếm</button>
             </div>
-            <<div class="user-options">
+            <div class="user-options">
     <button onclick="window.location.href='./page/dangnhap-dangki/dangnhap/dangnhap.php';">Đăng Nhập</button>
     <span>hoặc</span>
     <button onclick="window.location.href='./page/dangnhap-dangki/dang-ki/dangki.php';">Đăng Ký</button>
-    <button onclick="window.location.href='./../../BTL/text/giohang.php';">Giỏ Hàng</button>
 
-
+    <button onclick="window.location.href='./page/giohang/giohang.php';">Giỏ Hàng</button>
+    
 </div>
 
 
@@ -37,4 +37,4 @@
             <span>Giảm Giá Theo Đơn Hàng</span>
         </div>
     </header>
-</body>
+</body> 

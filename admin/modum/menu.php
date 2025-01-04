@@ -1,5 +1,5 @@
 <ul class="admin">
-    <li><a href="index.php?action=quanlydanhmucsanpham">quản lý doanh mục</a></li>
-    <li><a href="index.php?action=quanlydanhsanpham">quản lý sản phẩm</a></li>
-    <li><a href="index.php?action=quanlybaiviet">quản lý bài viết</a></li>
+    <li><a href="index.php?action=quanlydanhmucsanpham&query=them">quản lý doanh mục</a></li>
+    <li><a href="index.php?action=quanlydanhsanpham&query=them">quản lý sản phẩm</a></li>
+    <li><a href="index.php?action=quanlybaiviet&query=them">quản lý bài viết</a></li>
 </ul>

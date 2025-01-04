@@ -7,14 +7,31 @@
         ["name" => "Camera Insta360 One X3", "price" => 8490000, "image" => "page/sanpham/main/img/camera-hanh-trinh-insta360-one-x3.png", "description" => "Mô tả sản phẩm 4"],
     ];
 
-    foreach ($products as $product) {
-        echo "<div class='product'>
-                <img src='{$product['image']}' alt='{$product['name']}' style='width: 150px; height: 150px;'>
-                <h3>{$product['name']}</h3>
-                <p>{$product['description']}</p>
-                <p>Giá: " . number_format($product['price'], 0, ',', '.') . " VNĐ</p>
-                <button onclick=\"addToCart('{$product['name']}', {$product['price']})\">Thêm vào giỏ</button>
-              </div>";
-    }
+    // Chuyển mảng sản phẩm thành JSON
+    $jsonProducts = json_encode($products);
     ?>
+
+    <!-- Hiển thị sản phẩm -->
+    <?php foreach ($products as $product): ?>
+        <div class='product'>
+            <img src='<?= $product["image"] ?>' alt='<?= $product["name"] ?>' style='width: 150px; height: 150px;'>
+            <h3><?= $product["name"] ?></h3>
+            <p><?= $product["description"] ?></p>
+            <p>Giá: <?= number_format($product["price"], 0, ',', '.') ?> VNĐ</p>
+            <button onclick="addToCart('<?= $product["name"] ?>', <?= $product["price"] ?>)">Thêm vào giỏ</button>
+        </div>
+    <?php endforeach; ?>
+
+    <!-- Chuyển JSON vào JavaScript -->
+    <script>
+        // Nhận JSON từ PHP
+        const products = <?= $jsonProducts ?>;
+        console.log(products);
+
+        // Ví dụ: Hiển thị tên sản phẩm
+        products.forEach(product => {
+            console.log(`Tên sản phẩm: ${product.name}, Giá: ${product.price}`);
+        });
+    </script>
 </div>
+

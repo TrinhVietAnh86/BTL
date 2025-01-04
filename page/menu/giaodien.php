@@ -9,7 +9,7 @@
                 <button>Tìm Kiếm</button>
             </div>
             <div class="user-options">
-    <button onclick="window.location.href='./page/dangnhap-dangki/dangnhap/dangnhap.php';">Tài Khoản</button>
+    <button onclick="window.location.href='./page/login';">Tài Khoản</button>
     <button onclick="window.location.href='./../../BTL/text/giohang.php';">Giỏ Hàng</button>
 </div>
         </div>

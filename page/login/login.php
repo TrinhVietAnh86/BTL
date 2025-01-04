@@ -24,10 +24,11 @@ if (isset($_POST['login'])) {
 <head>
     <meta charset="UTF-8">
     <title>Đăng nhập</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<link rel="stylesheet" href="styles.css">
 <body>
     <form action="login.php" method="POST">
+        <h2>Đăng nhập</h2>
         <label for="username">Tên đăng nhập:</label>
         <input type="text" name="username" id="username" required>
         <br>
@@ -35,6 +36,7 @@ if (isset($_POST['login'])) {
         <input type="password" name="password" id="password" required>
         <br>
         <button type="submit" name="login">Đăng nhập</button>
+        <p>Chưa có tài khoản? <a href="register.php">Đăng ký ở đây</a></p>
     </form>
 </body>
 </html>

@@ -1,27 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Đăng ký</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h2>Đăng ký</h2>
-    <form action="register.php" method="post">
-        <label for="fullname">Họ và tên:</label>
-        <input type="text" id="fullname" name="fullname" required><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="password">Mật khẩu:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        <input type="submit" value="Đăng ký">
-    </form>
-    <p>Đã có tài khoản? <a href="login.php">Đăng nhập ở đây</a></p>
-</body>
-</html>
-
 <?php
-include('../../../../BTL/database/data.php');
+include('../../../BTL/database/data.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fullname = $_POST['fullname'];
@@ -64,3 +42,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
 }
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="register.php" method="POST">
+        <h2>Đăng ký</h2>
+        <label for="fullname">Họ và tên:</label>
+        <input type="text" id="fullname" name="fullname" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Đăng ký</button>
+        <p>Đã có tài khoản? <a href="login.php">Đăng nhập ở đây</a></p>
+    </form>
+</body>
+</html>

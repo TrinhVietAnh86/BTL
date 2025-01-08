@@ -1,5 +1,5 @@
 <?php
-$sql_sua_danhmucsp = "SELECT * FROM danhmucsanpham WHERE id='$_GET[iddanhmuc]' LIMIT 1";
+$sql_sua_danhmucsp = "SELECT * FROM danhsachsanpham WHERE id='$_GET[iddanhmuc]' LIMIT 1";
 $query_sua_danhmucsp = mysqli_query($conn, $sql_sua_danhmucsp);
 ?>
 <p>Sửa danh mục sản phẩm</p>

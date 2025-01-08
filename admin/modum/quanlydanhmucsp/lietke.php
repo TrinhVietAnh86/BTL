@@ -18,7 +18,7 @@ $i++;
 <td><?php echo $row['tendanhmuc'] ?></td>
 <td>
 <a href="modum/quanlydanhmucsp/xuly.php?iddanhmuc=<?php echo $row['id'] ?>">Xoá</a>
- | <a href="action=quanlydanhmucsanpham&query=sua&iddanhmuc=<?php echo $row['id'] ?>">Sửa</a>
+ | <a href="?action=quanlydanhmucsanpham&query=sua&iddanhmuc=<?php echo $row['id'] ?>">Sửa</a>
 </td>
 </tr>
 <?php

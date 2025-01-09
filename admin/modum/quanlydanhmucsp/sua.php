@@ -6,7 +6,7 @@ $query_sua_danhmucsp = mysqli_query($conn, $sql_sua_danhmucsp);
 <table border="1" width="50%" style="border-collapse: collapse;">
 <form method="POST" action="modum/quanlydanhmucsp/xuly.php?iddanhmuc=<?php echo $_GET['iddanhmuc'] ?>">
 <?php
-while ($dong = mysqli_fetch_array($query_sua_danhmucsp)) {
+while ($dong = mysqli_fetchx_array($query_sua_danhmucsp)) {
 ?>
 <tr>
 <td>Tên danh mục</td>

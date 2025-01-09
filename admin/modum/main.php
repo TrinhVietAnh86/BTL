@@ -14,6 +14,11 @@
         include("modum/quanlydanhmucsp/lietke.php");
     } elseif($tam == 'quanlydanhmucsanpham' && $query == 'sua'){
         include("modum/quanlydanhmucsp/sua.php");
+    } elseif($tam == 'quanlysp' && $query == 'them'){
+        include("modum/quanlysp/them.php");
+        include("modum/quanlysp/lietke.php");
+    } elseif($tam == 'quanlysp' && $query == 'sua'){
+        include("modum/quanlysp/sua.php");
     } else {
         include("modum/dashboard.php");
     }

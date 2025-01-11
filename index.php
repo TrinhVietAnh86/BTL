@@ -7,7 +7,7 @@
 </head>
 <link rel="stylesheet" href="css/styles.css">
 <body>
-    
+    <?php include("database/data.php")?>
     <?php include("page/menu/giaodien.php")?>
     <?php include("page/banner/banner.php")?>
     <?php include("page/sanpham/giaodien.php")?>

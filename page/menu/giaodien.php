@@ -10,7 +10,7 @@
             </div>
             <div class="user-options">
     <button onclick="window.location.href='./page/login';">Tài Khoản</button>
-    <button onclick="window.location.href='./../../BTL/text/giohang.php';">Giỏ Hàng</button>
+    <button onclick="window.location.href='./../../BTL/page/giohang/giohang.php';">Giỏ Hàng</button>
 </div>
         </div>
         <nav>

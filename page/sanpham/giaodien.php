@@ -39,7 +39,7 @@
                         break;
                 }
             } else {
-                include('main/maytinh.php');
+                echo "<h2>Chào Mừng Bạn Đến Với Cửa Hàng Của Chúng Tôi</h2>";
                 
             }
             ?>

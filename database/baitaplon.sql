@@ -56,7 +56,7 @@ CREATE TABLE `sanpham` (
   `tensanpham` varchar(100) NOT NULL,
   `giasp` varchar(100) NOT NULL,
   `hinhanh` varchar(50) NOT NULL,
-  `tomtat` tinytext NOT NULL,
+  `mota` tinytext NOT NULL,
   `noidung` text NOT NULL,
   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

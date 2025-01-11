@@ -3,11 +3,7 @@
     <form method="POST" action="modum/quanlydanhmucsp/xuly.php">
         <tr>
             <td>Tên danh mục:</td>
-            <td><input type="text" name="tendanhmuc"></td>  
-        </tr>
-        <tr>
-            <td>Thứ tự</td>
-            <td><input type="text" name="thutu"></td>
+            <td><input type="text" name="tendanhmuc" required></td>  
         </tr>
         <tr>
             <td colspan="2">

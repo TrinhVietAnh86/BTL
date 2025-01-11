@@ -1,5 +1,5 @@
 <?php
-include('../../../../database/data.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/BTL/database/data.php');
 
 if (isset($_GET['iddanhmuc'])) {
     $id = $_GET['iddanhmuc'];

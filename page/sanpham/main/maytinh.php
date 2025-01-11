@@ -23,7 +23,7 @@ $row_title = mysqli_fetch_array($query_cate);
             <a href="">
                 <img src="admin/modum/quanlysp/uploads/<?php echo $row_pro['hinhanh']; ?>" alt="<?php echo $row_pro['tensanpham']; ?>">
                 <p class="">Tên sản phẩm: <?php echo $row_pro['tensanpham']; ?></p>
-                <p class="">Giá: <?php echo number_format($row_pro['giasp'], 0, ',', '.'); ?> VNĐ</p>
+                <p class="">Giá: <?php echo number_format($row_pro['giasp']); ?> VNĐ</p>
             </a>
         </li>
     <?php } ?>

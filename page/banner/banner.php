@@ -15,8 +15,8 @@
 </div>
 
 <div class="anhbanner">
-    <div class="anh1"><img src="img/anh2.png" alt="" srcset=""></div>
-    <div class="anh1"><img src="img/anh2.png" alt="" srcset=""></div>
+    <div class="anh1"><img src="img/image.png" alt="" srcset=""></div>
+    <div class="anh1"><img src="img/anhbanner2.jpg" alt="" srcset=""></div>
 </div>
 
     <script>

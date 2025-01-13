@@ -1,6 +1,4 @@
-<link rel="stylesheet" href="../../css/giaodien.css">
-
-    <div class="containersp">
+<div class="containersp">
         <?php
         include("main/spmenu.php")
         ?>

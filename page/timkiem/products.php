@@ -1,68 +1,36 @@
+<!-- filepath: /c:/Xampp/htdocs/BTL/page/timkiem/products.php -->
+<?php
+include('../../database/data.php');
+
+
+if (isset($_GET['keyword'])) {
+    $keyword = mysqli_real_escape_string($conn, $_GET['keyword']);
+    $sql = "SELECT * FROM sanpham WHERE tensanpham LIKE '%$keyword%'";
+    $result = mysqli_query($conn, $sql);
+}
+?>
+
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh sách sản phẩm</title>
-    <style>
-        .product {
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin: 10px;
-            text-align: center;
-            width: 200px;
-            display: inline-block;
-            vertical-align: top;
-        }
-        .product img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+    <title>Kết quả tìm kiếm</title>
+    <link rel="stylesheet" href="../../css/styles.css">
 </head>
 <body>
-
-    <h1>Danh sách sản phẩm</h1>
-
-    <?php
-    // Danh sách sản phẩm
-    $products = [
-        ["name" => "Sản phẩm 1", "price" => 100000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 1"],
-        ["name" => "Sản phẩm 2", "price" => 200000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 2"],
-        ["name" => "Sản phẩm 3", "price" => 150000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 3"],
-        ["name" => "Sản phẩm 4", "price" => 120000, "image" => "https://via.placeholder.com/150", "description" => "Mô tả sản phẩm 4"],
-    ];
-
-    // Lấy từ khóa tìm kiếm từ URL
-    $keyword = isset($_GET['keyword']) ? $_GET['keyword'] : '';
-
-    // Lọc sản phẩm theo từ khóa
-    $filteredProducts = [];
-    if (!empty($keyword)) {
-        foreach ($products as $product) {
-            if (stripos($product["name"], $keyword) !== false) {
-                $filteredProducts[] = $product;
-            }
-        }
-    } else {
-        $filteredProducts = $products; // Nếu không có từ khóa, hiển thị tất cả
-    }
-
-    // Hiển thị sản phẩm
-    if (count($filteredProducts) > 0) {
-        foreach ($filteredProducts as $product): ?>
-            <div class="product">
-                <img src="<?= $product["image"] ?>" alt="<?= $product["name"] ?>">
-                <h3><?= $product["name"] ?></h3>
-                <p><?= $product["description"] ?></p>
-                <p>Giá: <?= number_format($product["price"], 0, ',', '.') ?> VNĐ</p>
-                <button onclick="addToCart('<?= $product["name"] ?>', <?= $product["price"] ?>)">Thêm vào giỏ</button>
-            </div>
-        <?php endforeach;
-    } else {
-        echo "<p>Không tìm thấy sản phẩm nào phù hợp với từ khóa: <strong>$keyword</strong></p>";
-    }
-    ?>
-
+    <h1>Kết quả tìm kiếm cho "<?php echo htmlspecialchars($keyword); ?>"</h1>
+    <?php if (mysqli_num_rows($result) > 0): ?>
+        <ul>
+            <?php while ($row = mysqli_fetch_assoc($result)): ?>
+                <li>
+                    <h2><?php echo htmlspecialchars($row['tensanpham']); ?></h2>
+                    <p>Giá: <?php echo htmlspecialchars($row['giasp']); ?> VNĐ</p>
+                    <img src="../../admin/modum/quanlysp/uploads/<?php echo htmlspecialchars($row['hinhanh']); ?>" alt="<?php echo htmlspecialchars($row['tensanpham']); ?>" width="150px">
+                </li>
+            <?php endwhile; ?>
+        </ul>
+    <?php else: ?>
+        <p>Không tìm thấy sản phẩm nào.</p>
+    <?php endif; ?>
 </body>
 </html>

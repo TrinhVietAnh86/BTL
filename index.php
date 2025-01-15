@@ -12,5 +12,6 @@
     <?php include("page/banner/banner.php")?>
     <?php include("page/sanpham/giaodien.php")?>
     <?php include("page/cuoi/cuoitrang.php")?>
+    <?php include("page/timkiem/products.php")?>
 </body>
 </html>

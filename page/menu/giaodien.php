@@ -5,13 +5,15 @@
                 <h1>ACCENT</h1>
             </div>
             <div class="search-bar">
-                <input type="text" placeholder="Tìm kiếm...">
-                <button>Tìm Kiếm</button>
+                <form method="GET" action="../../../../BTL/page/timkiem/products.php">
+                    <input type="text" name="keyword" placeholder="Nhập tên sản phẩm..." required>
+                    <button type="submit">Tìm kiếm</button>
+                </form>
             </div>
             <div class="user-options">
-    <button onclick="window.location.href='./page/login';">Tài Khoản</button>
-    <button onclick="window.location.href='./../../BTL/page/giohang/giohang.php';">Giỏ Hàng</button>
-</div>
+                <button onclick="window.location.href='./page/login';">Tài Khoản</button>
+                <button onclick="window.location.href='./../../BTL/page/giohang/giohang.php';">Giỏ Hàng</button>
+            </div>
         </div>
         <nav>
             <ul>
@@ -31,4 +33,4 @@
             <span>Giảm Giá Theo Đơn Hàng</span>
         </div>
     </header>
-</body> 
+</body>

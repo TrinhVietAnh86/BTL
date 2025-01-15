@@ -17,7 +17,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="../../BTL/index.php">Trang Chủ</a></li>
                 <li><a href="#">Giới Thiệu</a></li>  
                 <li><a href="#">Danh mục sản Phẩm</a></li>
                 <li><a href="#">Sản Phẩm</a></li>

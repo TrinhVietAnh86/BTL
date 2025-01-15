@@ -326,11 +326,14 @@ button.prev:hover, button.next:hover {
     color: #3498db;
 }
 
+
+/* sủa bảng bên phải */
 .content {
     width: 75%;
     padding: 20px;
     overflow-y: auto;
-    display: flex;
+    text-align: center;
+    
 }
 
 .content h2 {
@@ -338,8 +341,6 @@ button.prev:hover, button.next:hover {
     color: #000000;
 }
 
-
-/* sủa bảng bên phải */
 .productssp {
     flex: 1;
     overflow-x: hidden; 
@@ -358,8 +359,7 @@ button.prev:hover, button.next:hover {
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
-    width: 360px;
-    
+    width: 100%;
 }
 
 .product img {

@@ -24,7 +24,7 @@ if (isset($_GET['keyword'])) {
             <?php while ($row = mysqli_fetch_assoc($result)): ?>
                 <li>
                     <h2><?php echo htmlspecialchars($row['tensanpham']); ?></h2>
-                    <p>Giá: <?php echo htmlspecialchars($row['giasp']); ?> VNĐ</p>
+                    <p>Giá: <?php echo number_format($row['giasp']); ?> VNĐ</p>
                     <img src="../../admin/modum/quanlysp/uploads/<?php echo htmlspecialchars($row['hinhanh']); ?>" alt="<?php echo htmlspecialchars($row['tensanpham']); ?>" width="150px">
                 </li>
             <?php endwhile; ?>
